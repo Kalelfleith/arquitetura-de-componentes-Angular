@@ -36,3 +36,8 @@ Todo componente possui seu ciclo de vida (normalmente chamado de
 lifecycle hooks), que começa assim que o Angular o instancializa na
 aplicação e através deles é possível executar diferentes lógicas nos vários
 estágios de um componente.
+
+### Constructor X NgOnInit
+
+- <strong>Constructor:</strong> Deve ser utilizado apenas para inicializar serviços injetados via DI (injeção de dependência).
+- <strong>ngOnInit:</strong> Deve ser utilizado para todo tipo de lógicaque o componente precisar executar após ter sido criado.
